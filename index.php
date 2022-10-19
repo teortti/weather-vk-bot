@@ -39,8 +39,8 @@ function vk_msg_send($peer_id,$text){
         echo $confirmation_token; 
     break;  
     case 'message_new': 
-        $message_text = $data -> object -> text;
-        $message_text = $data -> object -> peer_id;
+        $message_text = $data->object->text;
+        $message_text = $data->object->peer_id;
         if ($message_text == "погода"){
             echo "Температура: ".$t->temp."°C (ощущается как ".$t->feels_like."°C)<br>"
    . "Скорость ветра: ".$t->wind_speed." м/с.<br>"
