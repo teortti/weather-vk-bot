@@ -3,8 +3,6 @@ $confirmation_token = '46498634';
 $token = 'ce7f72e50cf12c397e23f2e1f3d18656c5ca0cbd0424ed4f341b2db1fdd71d58846d864a5d5cf77bc6b69';
 $data = json_decode(file_get_contents('php://input'));
 
-print_r($data);
-
 $opts = array(
   'http' => array(
     'method' => "GET",
